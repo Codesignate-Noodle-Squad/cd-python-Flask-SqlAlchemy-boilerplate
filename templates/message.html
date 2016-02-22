@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="container">
+	    <a href="{{ url_for('home') }}">Say something else</a>
+		<a href="{{ url_for('show_messages') }}">Show all users</a>
+		<div class="center">
+		    <h1>{{ username }}</h1>
+		    <p>Name : {{ firstname }} {{ lastname }}</p>
+		    <p>Email : {{ email }}</p>
+		    <h3> " {{ message }} " </h3>
+		</div>
+	</div>
+{% endblock %}
